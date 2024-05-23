@@ -1,6 +1,8 @@
 package modelo.dao;
 
 import java.util.List;
+//k clave
+//t el tipo de clase
 
 public interface InterfaceGenericoCrud<K,T> {
 	 

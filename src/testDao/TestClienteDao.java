@@ -31,6 +31,7 @@ static {
 		Cliente cli1 = new Cliente("87654321D","Pedro","Gomez","Alcala 13",BigDecimal.valueOf(1000) , 100);
 		Cliente cli2 = new Cliente("J88888888","Pedro","Gomez","Alcala 13",BigDecimal.valueOf(1000) , 100);
 		System.out.println(cdao.alta(cli2));
+		System.out.println(cdao.alta(cli1));
 	}
 	public static void eliminar () {
 		
