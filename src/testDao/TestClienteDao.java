@@ -21,11 +21,11 @@ static {
 	
 	public static void main(String[] args) {
 		
-		alta();
-		eliminar();
-		uno();
-		todos();
-		nada();
+		//alta();
+		//eliminar();
+		//uno();
+		//todos();
+		//nada();
 	}
 	public static void alta () {
 		Cliente cli1 = new Cliente("87654321D","Pedro","Gomez","Alcala 13",BigDecimal.valueOf(1000) , 100);
@@ -41,13 +41,7 @@ static {
 public static void uno () {
 		
 		System.out.println(cdao.buscarUno("87654321D"));
-	}
-public static void todos () {
-	
-	System.out.println(cdao.buscarTodos());
 }
-public static void nada () {
-	
-	
+
 }
-}
+//https://github.com/juliapadureanu/app-gestion-proyectos/tree/JULIA-proyecto

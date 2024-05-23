@@ -1,6 +1,8 @@
 package modelo.entidades;
 
 import java.io.Serializable;
+import java.util.Objects;
+
 import javax.persistence.*;
 
 
@@ -47,6 +49,29 @@ public class Departamento implements Serializable {
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
+	}
+
+	@Override
+	public String toString() {
+		return "Departamento [idDepar=" + idDepar + ", direccion=" + direccion + ", nombre=" + nombre
+				+ ", getIdDepar()=" + getIdDepar() + ", getDireccion()=" + getDireccion() + ", getNombre()="
+				+ getNombre() + ", hashCode()=" + hashCode() + ", getClass()=" + getClass() + ", toString()="
+				+ super.toString() + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(idDepar);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!(obj instanceof Departamento))
+			return false;
+		Departamento other = (Departamento) obj;
+		return idDepar == other.idDepar;
 	}
 
 }

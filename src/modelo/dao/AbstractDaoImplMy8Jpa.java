@@ -7,7 +7,6 @@ import javax.persistence.Persistence;
 import javax.persistence.Query;
 
 
-
 public class AbstractDaoImplMy8Jpa {
 
 		protected EntityManagerFactory emf; // permite administrar las operaciones con la base de datos.
