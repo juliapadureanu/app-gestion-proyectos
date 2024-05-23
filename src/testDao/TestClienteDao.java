@@ -25,6 +25,7 @@ static {
 		eliminar();
 		uno();
 		todos();
+		nada();
 	}
 	public static void alta () {
 		Cliente cli1 = new Cliente("87654321D","Pedro","Gomez","Alcala 13",BigDecimal.valueOf(1000) , 100);
@@ -44,5 +45,9 @@ public static void uno () {
 public static void todos () {
 	
 	System.out.println(cdao.buscarTodos());
+}
+public static void nada () {
+	
+	
 }
 }
